@@ -7,14 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     name: Create Event
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
     - name: Create Event
       uses: ./
       env:
-        TENANT_NAME: {{ secrets.TENANT_NAME }}
-        APP_ID: {{ secrets.APP_ID }}
-        APP_SECRET: {{ secrets.APP_SECRET }}
+        TENANT_NAME: ${{ secrets.TENANT_NAME }}
+        APP_ID: ${{ secrets.APP_ID }}
+        APP_SECRET: ${{ secrets.APP_SECRET }}
       with:
         subject: 'From repo'
         body: 'Some body'
