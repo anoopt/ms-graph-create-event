@@ -31,7 +31,7 @@ jobs:
     name: Create Event
     steps:
     - name: Create event on the next day
-      uses: anoopt/ms-graph-create-event@master
+      uses: anoopt/ms-graph-create-event@vv1
       env:
         TENANT_NAME: ${{ secrets.TENANT_NAME }}
         APP_ID: ${{ secrets.APP_ID }}
@@ -65,7 +65,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Create event on the specified day and time
-      uses: anoopt/ms-graph-create-event@master
+      uses: anoopt/ms-graph-create-event@v1
       env:
         TENANT_NAME: ${{ secrets.TENANT_NAME }}
         APP_ID: ${{ secrets.APP_ID }}
@@ -79,3 +79,7 @@ jobs:
 ```
 
 When there is a code push, the above workflow will create an event for user 'user@contoso.onmicrosoft.com' on 4th Dec 2019 from 14:30 to 15:00 with the URL of compare in details.
+
+## Event that gets created
+
+![Event](./img/Endresult.png)
