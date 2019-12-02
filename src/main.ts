@@ -17,7 +17,7 @@ async function run() {
         let startTime = core.getInput('start');
         let endTime = core.getInput('end');
 
-        if(startTime == null){
+        if(startTime.length == 0){
             let nextDay: any = format(addBusinessDays(new Date(), 1), 'yyyy-MM-dd');
             core.debug(nextDay);
 
