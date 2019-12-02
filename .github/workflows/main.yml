@@ -16,6 +16,8 @@ jobs:
         APP_ID: ${{ secrets.APP_ID }}
         APP_SECRET: ${{ secrets.APP_SECRET }}
       with:
-        subject: 'From repo'
-        body: 'Some body'
+        subject: 'Review pull request'
+        body: 'A new PR has been submitted on ${{ github.repository }} from ${{ github.actor }}. Please review it.'
         emailaddress: 'anoop@anoopccdev1.onmicrosoft.com'
+        start: '2019-12-04T14:30:00'
+        end: '2019-12-04T15:00:00'
