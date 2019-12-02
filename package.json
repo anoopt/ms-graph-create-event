@@ -1,0 +1,25 @@
+{
+  "name": "github_actions_graph_event_create",
+  "version": "1.0.0",
+  "description": "GitHub Action to create an event using MS Graph",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anoop Tatti",
+  "license": "ISC",
+  "devDependencies": {
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@pnp/common": "^1.3.7",
+    "@pnp/graph": "^1.3.7",
+    "@pnp/logging": "^1.3.7",
+    "@pnp/nodejs": "^1.3.7",
+    "@pnp/odata": "^1.3.7",
+    "date-fns": "^2.8.1"
+  }
+}
