@@ -2,6 +2,10 @@
 
 Creates an event in a user's calendar when an event occurs. This action can be used when say for example a pull request is created and some one has to review it. Creating an event in their calendar will prompt them a notification.
 
+## What it does
+
+![Action](./img/Action.jpg)
+
 ## Pre requisites
 
 This action uses Microsoft Graph to create an event. So please make sure that you [register an application in Azure AD](https://docs.microsoft.com/en-us/graph/auth-register-app-v2), provide that app `Calendars.ReadWrite` permissions and create a client secret for that.
