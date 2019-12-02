@@ -25,6 +25,8 @@ async function run() {
             endTime = `${nextDay}T13:00:00`
         }
 
+        let extraInfo: string = `<br/>Request submitted around ${format(new Date(), 'dd-MMM-yyyy hh:mm')}`;
+
         console.log("Setting up graph...");
 
         graph.setup({
@@ -41,7 +43,7 @@ async function run() {
             "subject": subject,
             "body": {
                 "contentType": "HTML",
-                "content": body
+                "content": body + extraInfo
             },
             "start": {
                 "dateTime": startTime,
