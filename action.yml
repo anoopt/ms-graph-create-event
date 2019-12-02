@@ -20,4 +20,4 @@ inputs:
     description: "The date and time when the event should end (format - yyyy-MM-ddThh:mm:ss). If not specified end time will be next day 13:00 GMT."
 runs:
   using: "node12"
-  main: "lib/main.js"
+  main: "dist/index.js"
