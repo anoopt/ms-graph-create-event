@@ -1,5 +1,5 @@
-name: "Crete event using Microsoft Graph"
-description: "Creates an event in a specified user's calendar on the next business day."
+name: "Create an event using Microsoft Graph"
+description: "Creates an event in a specified user's calendar on the next business day or on a specified date."
 author: "Anoop Tatti"
 branding:
   icon: "calendar"
@@ -15,9 +15,9 @@ inputs:
     description: "The email address of the person for whom the event will be created."
     required: true
   start:
-    description: "The date and time when the event should start (format - yyyy-MM-ddThh:mm:ss). If not specified start time will be next day 12:00 GMT."
+    description: "(Optional) The date and time when the event should start (format - yyyy-MM-ddThh:mm:ss). If not specified start time will be next day 12:00 GMT."
   end:
-    description: "The date and time when the event should end (format - yyyy-MM-ddThh:mm:ss). If not specified end time will be next day 13:00 GMT."
+    description: "(Optional) The date and time when the event should end (format - yyyy-MM-ddThh:mm:ss). If not specified end time will be next day 13:00 GMT."
 runs:
   using: "node12"
   main: "dist/index.js"
