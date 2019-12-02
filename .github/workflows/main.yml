@@ -1,0 +1,21 @@
+name: MS Graph Event
+
+on: [push]
+
+jobs:
+  create-event:
+    runs-on: ubuntu-latest
+    name: Create Event
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Create Event
+      uses: ./
+      env:
+        TENANT_NAME: {{ secrets.TENANT_NAME }}
+        APP_ID: {{ secrets.APP_ID }}
+        APP_SECRET: {{ secrets.APP_SECRET }}
+      with:
+        subject: 'From repo'
+        body: 'Some body'
+        emailaddress: 'anoop@anoopccdev1.onmicrosoft.com'
