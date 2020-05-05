@@ -31,7 +31,7 @@ jobs:
     name: Create Event
     steps:
     - name: Create event on the next day
-      uses: anoopt/ms-graph-create-event@vv1
+      uses: anoopt/ms-graph-create-event@v1
       env:
         TENANT_NAME: ${{ secrets.TENANT_NAME }}
         APP_ID: ${{ secrets.APP_ID }}
