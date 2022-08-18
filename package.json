@@ -14,7 +14,7 @@
     "typescript": "^3.7.2"
   },
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.9.1",
     "@pnp/common": "^1.3.7",
     "@pnp/graph": "^1.3.7",
     "@pnp/logging": "^1.3.7",
